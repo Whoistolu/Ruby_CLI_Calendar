@@ -1,4 +1,4 @@
-require_relative 'lib/calendar'
+require_relative './calendar'
 
 calendar = Calendar.new
 
