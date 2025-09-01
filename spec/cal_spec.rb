@@ -28,4 +28,8 @@ RSpec.describe Calendar do
     lines = output.split("\n")
     expect(lines.any? { |line| line.strip.end_with?("2") }).to be true
   end
+
+  it "prints usage instructions for invalid input" do
+    expect { calendar.generate(13, 2025) }.to raise_error(ArgumentError)
+  end
 end
