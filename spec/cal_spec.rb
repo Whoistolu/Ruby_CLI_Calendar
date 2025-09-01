@@ -22,4 +22,10 @@ RSpec.describe Calendar do
     week_line = lines[2]
     expect(week_line.start_with?("   ")).to be true
   end
+
+  it "adds a line break after Saturday" do
+    output = calendar.generate(8, 2025)
+    lines = output.split("\n")
+    expect(lines.any? { |line| line.strip.end_with?("2") }).to be true
+  end
 end
