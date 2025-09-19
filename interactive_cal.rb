@@ -16,3 +16,6 @@ def show_calendar(month, year)
   end
   puts "\n"
 end
+
+month = Date.today.month
+year  = Date.today.year
