@@ -8,4 +8,8 @@ class Calendar
     def self.days_in_month(month, year)
         Date.new(year, month, -1).day
     end
+
+        def self.weekday_offset(month, year)
+        Date.new(year, month, 1).wday
+    end
 end
