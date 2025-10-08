@@ -7,3 +7,6 @@ month = (ARGV[0] || Date.today.month).to_i
 
 first_day = Date.new(year, month, 1)
 last_day  = Date.new(year, month, -1)
+
+puts "     #{Date::MONTHNAMES[month]} #{year}"
+puts "Su Mo Tu We Th Fr Sa"
