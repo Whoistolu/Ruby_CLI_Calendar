@@ -14,4 +14,5 @@ puts "#{Date::MONTHNAMES[month]} #{year}"
 # I try to print the header
 puts "Su Mo Tu We Th Fr Sa"
 
-# puts first_day.wday
+# I then try to print the leading spaces for the first week
+puts "  " * first_day.wday
