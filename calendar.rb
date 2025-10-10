@@ -8,9 +8,10 @@ year = today.year
 first_day = Date.new(year, month, 1)
 last_day  = Date.new(year, month, -1)
 
+# I try to print the month and year
+puts "#{Date::MONTHNAMES[month]} #{year}"
 
 # I try to print the header
-puts "#{Date::MONTHNAMES[month]} #{year}"
 puts "Su Mo Tu We Th Fr Sa"
 
 # puts first_day.wday
