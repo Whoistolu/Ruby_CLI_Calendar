@@ -1,5 +1,15 @@
 require 'date'
 
-puts today = Date.today
-puts month = today.month
-puts year = today.year
+today = Date.today
+month = today.month
+year = today.year
+
+# I try to get the first and last day of the month
+first_day = Date.new(year, month, 1)
+last_day  = Date.new(year, month, -1)
+
+
+# I try to print the header
+puts "Su Mo Tu We Th Fr Sa"
+
+# puts first_day.wday
